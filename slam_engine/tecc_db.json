@@ -1,0 +1,17 @@
+[
+  {
+    "id": "exit_sign",
+    "text": "EXIT",
+    "meaning": "Indicates a building exit used for evacuation."
+  },
+  {
+    "id": "room_number",
+    "text": "ROOM 301",
+    "meaning": "Represents a room number inside a building."
+  },
+  {
+    "id": "lab",
+    "text": "LAB",
+    "meaning": "Indicates a laboratory area."
+  }
+]
