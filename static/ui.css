@@ -1,0 +1,18 @@
+/* static/ui.css */
+:root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6b2;--accent:#4f46e5;--glass:rgba(255,255,255,0.03)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071129 0%,#0b1220 100%);color:#e6eef6}
+.container{max-width:1100px;margin:28px auto;padding:18px}
+header h1{margin:0 0 12px 0;font-size:20px}
+.grid{display:grid;grid-template-columns:1fr 420px;gap:18px}
+.panel{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.input{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:var(--glass);color:inherit}
+.btn-row{margin-top:10px;display:flex;gap:8px}
+.btn{padding:8px 12px;border-radius:8px;border:none;background:transparent;color:#dbeafe;cursor:pointer}
+.btn.primary{background:var(--accent);box-shadow:0 6px 12px rgba(79,70,229,0.12)}
+.annotations{display:flex;flex-direction:column;gap:10px;max-height:420px;overflow:auto;margin-top:10px}
+.annotation{padding:8px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
+.log{max-height:220px;overflow:auto;background:rgba(0,0,0,0.1);padding:8px;border-radius:8px}
+.semantic{white-space:pre-wrap;max-height:200px;overflow:auto}
+.notice{font-size:12px;color:var(--muted);margin-top:8px}
+footer{margin-top:18px;color:var(--muted);text-align:center}
