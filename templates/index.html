@@ -1,0 +1,76 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>LP-SLAM TECC Dashboard</title>
+  <link rel="stylesheet" href="/static/ui.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>LP-SLAM — TECC + RAG Demo</h1>
+    </header>
+
+    <main class="grid">
+
+      <!-- LEFT SIDE -->
+      <section class="left">
+        <div class="panel">
+          <h2>Upload / URL</h2>
+
+          <!-- URL INPUT -->
+          <input id="imageUrl"
+                 class="input"
+                 placeholder="Paste image URL (public) or upload a file below">
+
+          <br><br>
+
+          <!-- FILE INPUT -->
+          <input id="fileInput"
+                 type="file"
+                 accept="image/*"
+                 class="input">
+
+          <div class="btn-row">
+            <button id="analyzeBtn" class="btn primary">Analyze Image</button>
+            <button id="sampleBtn" class="btn">Use sample image</button>
+          </div>
+
+          <div class="notice">
+            Supports: EXIT signs, room numbers, building signs, labels.
+          </div>
+        </div>
+
+        <!-- DETECTED ANNOTATIONS -->
+        <div class="panel">
+          <h2>Detected Annotations</h2>
+          <div id="annotations" class="annotations"></div>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDE -->
+      <section class="right">
+        <div class="panel">
+          <h2>Live Log</h2>
+          <div id="log" class="log"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Semantic Map (in-memory)</h2>
+          <pre id="semantic" class="semantic"></pre>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <small>LP-SLAM demo • TECC + RAG + LLM integration • Keys remain server-side</small>
+    </footer>
+
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
