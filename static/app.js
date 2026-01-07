@@ -1,4 +1,4 @@
-// static/app.js
+ // static/app.js
 
 // -------------------------
 // DOM ELEMENTS
