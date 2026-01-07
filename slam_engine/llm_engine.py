@@ -48,3 +48,4 @@ Return a JSON object with keys:
             return {"label": corrected_text.upper(), "explanation": text, "action": f"annotate:{corrected_text}", "sources": [d.get("id") for d in retrieved_docs]}
         except Exception as e:
             return {"label": corrected_text.upper(), "explanation": f"LLM error: {str(e)}", "action": f"annotate:{corrected_text}", "sources": [d.get("id") for d in retrieved_docs]}
+
