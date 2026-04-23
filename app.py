@@ -12,7 +12,7 @@ from slam_engine.text_detection import extract_text_from_image
 from slam_engine.tecc_model import rag_lookup
 from llm_client import llm_classify_text  # LLM now working
 
-app = FastAPI()
+app = FastAPI() 
 
 # GLOBAL SEMANTIC MAP
 global_semantic_map = []
