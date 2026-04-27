@@ -6,7 +6,7 @@ OPENAI_KEY = os.environ.get("OPENAI_API_KEY")
 USE_OPENAI = bool(OPENAI_KEY)
 
 if USE_OPENAI:
-    import openai
+    import openai 
     openai.api_key = OPENAI_KEY
 
 class LLM:
